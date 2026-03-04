@@ -1,0 +1,22 @@
+{"timestamp":"2026-03-04T19:43:31.620551Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-04T19:43:31.632409Z","level":"info","event":"Filling up the DagBag from /mnt/c/Users/DELL/Documents/Pipeline6/airflow/dags/main.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-04T19:43:36.492646Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/mnt/c/Users/DELL/Documents/Pipeline6/airflow/dags/main.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-04T19:43:36.596600Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:36.597399Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:36.598362Z","level":"info","event":"Current task name:extract","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:36.598973Z","level":"info","event":"Dag name:weather_etl_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:36.626349Z","level":"info","event":"==================================================","logger":"root","filename":"main.py","lineno":55}
+{"timestamp":"2026-03-04T19:43:36.628540Z","level":"info","event":"DÉBUT DE L'EXTRACTION","logger":"root","filename":"main.py","lineno":56}
+{"timestamp":"2026-03-04T19:43:36.629372Z","level":"info","event":"==================================================","logger":"root","filename":"main.py","lineno":57}
+{"timestamp":"2026-03-04T19:43:37.191149Z","level":"info","event":"✓ Données extraites pour Dakar","logger":"root","filename":"main.py","lineno":88}
+{"timestamp":"2026-03-04T19:43:38.155623Z","level":"info","event":"✓ Données extraites pour Libreville","logger":"root","filename":"main.py","lineno":88}
+{"timestamp":"2026-03-04T19:43:38.641842Z","level":"info","event":"✓ Données extraites pour Paris","logger":"root","filename":"main.py","lineno":88}
+{"timestamp":"2026-03-04T19:43:39.078807Z","level":"info","event":"✓ Données extraites pour New York","logger":"root","filename":"main.py","lineno":88}
+{"timestamp":"2026-03-04T19:43:39.571876Z","level":"info","event":"✓ Données extraites pour Tokyo","logger":"root","filename":"main.py","lineno":88}
+{"timestamp":"2026-03-04T19:43:40.004640Z","level":"info","event":"✓ Données extraites pour London","logger":"root","filename":"main.py","lineno":88}
+{"timestamp":"2026-03-04T19:43:40.096891Z","level":"info","event":"✓ 6 enregistrements extraits et sauvegardés dans /tmp/raw_weather_data.csv","logger":"root","filename":"main.py","lineno":95}
+{"timestamp":"2026-03-04T19:43:40.099451Z","level":"info","event":"Done. Returned value was: /tmp/raw_weather_data.csv","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-04T19:43:40.100032Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019cba60-43ee-72ca-9623-6dd08fa9efb9'), task_id='extract', dag_id='weather_etl_pipeline', run_id='manual__2026-03-04T19:43:16.444749+00:00', try_number=1, dag_version_id=UUID('019cba5f-72db-703f-acc5-8f4dabef2f4a'), map_index=-1, hostname='DESKTOP-MI7PU8O.localdomain', context_carrier={}, task=<Task(_PythonDecoratedOperator): extract>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 3, 4, 19, 43, 21, 451266, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1522}
+{"timestamp":"2026-03-04T19:43:40.368165Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:40.370003Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:40.372497Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): extract>","logger":"task.stdout"}

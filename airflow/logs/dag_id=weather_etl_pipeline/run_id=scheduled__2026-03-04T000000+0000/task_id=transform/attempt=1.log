@@ -1,0 +1,22 @@
+{"timestamp":"2026-03-04T19:43:42.766041Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-04T19:43:42.775468Z","level":"info","event":"Filling up the DagBag from /mnt/c/Users/DELL/Documents/Pipeline6/airflow/dags/main.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-04T19:43:47.393394Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/mnt/c/Users/DELL/Documents/Pipeline6/airflow/dags/main.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-04T19:43:47.970210Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:47.971787Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:47.979812Z","level":"info","event":"Current task name:transform","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:47.983307Z","level":"info","event":"Dag name:weather_etl_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:48.023752Z","level":"info","event":"==================================================","logger":"root","filename":"main.py","lineno":113}
+{"timestamp":"2026-03-04T19:43:48.024252Z","level":"info","event":"DÉBUT DE LA TRANSFORMATION","logger":"root","filename":"main.py","lineno":114}
+{"timestamp":"2026-03-04T19:43:48.024511Z","level":"info","event":"==================================================","logger":"root","filename":"main.py","lineno":115}
+{"timestamp":"2026-03-04T19:43:48.053611Z","level":"info","event":"✓ 1. Conversion des timestamps","logger":"root","filename":"main.py","lineno":123}
+{"timestamp":"2026-03-04T19:43:48.061824Z","level":"info","event":"✓ 2. Calcul de la durée du jour","logger":"root","filename":"main.py","lineno":127}
+{"timestamp":"2026-03-04T19:43:48.064288Z","level":"info","event":"✓ 3. Catégorisation des températures","logger":"root","filename":"main.py","lineno":143}
+{"timestamp":"2026-03-04T19:43:48.066065Z","level":"info","event":"✓ 4. Calcul de l'indice de confort","logger":"root","filename":"main.py","lineno":147}
+{"timestamp":"2026-03-04T19:43:48.067674Z","level":"info","event":"✓ 5. Conversion visibilité en km","logger":"root","filename":"main.py","lineno":151}
+{"timestamp":"2026-03-04T19:43:48.068805Z","level":"info","event":"✓ 6. Ajout de la date d'extraction","logger":"root","filename":"main.py","lineno":155}
+{"timestamp":"2026-03-04T19:43:48.144091Z","level":"info","event":"✓ Données transformées et sauvegardées dans /tmp/transformed_weather_data.csv","logger":"root","filename":"main.py","lineno":161}
+{"timestamp":"2026-03-04T19:43:48.144572Z","level":"info","event":"Done. Returned value was: /tmp/transformed_weather_data.csv","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-04T19:43:48.145046Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019cba60-4884-7811-beee-66a60b6ee0d6'), task_id='transform', dag_id='weather_etl_pipeline', run_id='scheduled__2026-03-04T00:00:00+00:00', try_number=1, dag_version_id=UUID('019cba5f-72db-703f-acc5-8f4dabef2f4a'), map_index=-1, hostname='DESKTOP-MI7PU8O.localdomain', context_carrier={}, task=<Task(_PythonDecoratedOperator): transform>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 3, 4, 19, 43, 42, 340885, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1522}
+{"timestamp":"2026-03-04T19:43:48.404904Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:48.405688Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-04T19:43:48.406787Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): transform>","logger":"task.stdout"}
